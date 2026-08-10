@@ -1,0 +1,1 @@
+SELECT T0."U_RWG_ItemNameRU" FROM OITM T0 WHERE T0."ItemCode" = $[$3.1.0]
