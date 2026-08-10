@@ -1,0 +1,1 @@
+SELECT T0."U_RWG_UoMNameRU" FROM OUOM T0  INNER JOIN OITM T1 ON T0."UomEntry" = T1."INUoMEntry" WHERE T1."ItemCode" = $[$3.1.1]
