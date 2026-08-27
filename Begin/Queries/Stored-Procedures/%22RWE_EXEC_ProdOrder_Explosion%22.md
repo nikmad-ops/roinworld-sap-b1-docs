@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWE_EXEC_ProdOrder_Explosion" (
+CREATE PROCEDURE "RWE_PROC_ProdOrder_Explosion" (
     IN  IV_PRODORDER_DOCENTRY INTEGER,  -- DocEntry OWOR; NULL = все верхнеуровневые заказы
     OUT OT_RESULT TABLE (
         "SalesOrderDocEntry"      INTEGER,
