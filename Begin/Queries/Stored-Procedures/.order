@@ -1,5 +1,4 @@
 %22RWE_REP_WO_RootStatus%22
-%22RWE_PROC_WO_RootStatus%22
 %22RWE_REP_WO_IssueProgress%22
 %22RWG_PROC_WO_IssueProgress%22
 %22RWE_REP_WO_OrderExplosion%22
@@ -10,3 +9,4 @@
 %22RWE_PROC_RDR_DEMAND%22
 %22RWE_DR_QUT_Production_Demand%22
 %22RWE_DR_WOR_Production_Demand%22
+%22RWE_PROC_WO_RootStatus%22
