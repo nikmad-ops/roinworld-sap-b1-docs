@@ -1,4 +1,4 @@
-ALTER PROCEDURE "RWE_REP_ProdOrder_Explosion" 
+CREATE PROCEDURE "RWE_REP_WO_OrderExplosion" 
 (IN DocEntry INT
 ,IN RepType NVARCHAR(15))
 
@@ -27,7 +27,7 @@ DECLARE lt_result TABLE
  "Status"                  NVARCHAR(60)   -- одно из 5 текстовых значений)
 );
 
-CALL "RWE_PROC_ProdOrder_Explosion" (:DocEntry,:lt_result);
+CALL "RWE_PROC_WO_OrderExplosion" (:DocEntry,:lt_result);
 
 IF :RepType = 'Required'
 THEN 
