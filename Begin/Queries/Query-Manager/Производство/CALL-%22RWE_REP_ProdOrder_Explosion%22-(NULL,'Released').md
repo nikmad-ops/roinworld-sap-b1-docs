@@ -1,1 +1,1 @@
-202.1.3. Требуется закрытие Произв.заказов (Released)
+CALL "RWE_REP_WO_OrderExplosion"(NULL,'Released')
