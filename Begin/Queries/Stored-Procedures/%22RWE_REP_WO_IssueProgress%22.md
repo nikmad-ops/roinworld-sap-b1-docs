@@ -7,7 +7,6 @@ SQL SECURITY INVOKER
 READS SQL DATA AS
 BEGIN
 
-
 DECLARE lt_result TABLE (
 		"ParentProdOrderDocEntry" INTEGER,
         "ParentProdOrderDocNum"   INTEGER,

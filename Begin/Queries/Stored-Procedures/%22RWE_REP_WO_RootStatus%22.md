@@ -80,5 +80,4 @@ THEN
 	;
 END IF;
 
-END;  
-    
+END;

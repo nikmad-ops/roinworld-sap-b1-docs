@@ -40,4 +40,3 @@ IF :DocEntry=-1 THEN RETURN; END IF;
 error := N'Поле Federal Tax ID является обязательным'; 
 	
 END;
-

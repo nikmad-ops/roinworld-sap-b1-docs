@@ -123,7 +123,6 @@ FROM #Layout
 INNER JOIN #Adm ON 1=1
 ;
 
-
 DROP TABLE #Adm;
 DROP TABLE #Layout;
 

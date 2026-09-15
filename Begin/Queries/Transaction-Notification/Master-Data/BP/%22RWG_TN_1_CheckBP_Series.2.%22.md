@@ -39,4 +39,3 @@ IF :DocEntry=-1 THEN RETURN; END IF;
 error := N'Только Manual серия нумерацмм допустима'; 
 	
 END;
-

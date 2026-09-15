@@ -41,11 +41,9 @@ DECLARE lt_result TABLE (
         "Status"                  NVARCHAR(60)
 );
 
-
 SELECT R."DocEntry" INTO DocEntry FROM NNM1 N
 INNER JOIN OWOR R ON N."ObjectCode" = R."ObjType" AND N."Series" = R."Series"
 WHERE R."DocNum" = :DocNum;
-
 
 CALL "RWE_PROC_WO_IssueProgress" (:DocEntry,:lt_result);
 

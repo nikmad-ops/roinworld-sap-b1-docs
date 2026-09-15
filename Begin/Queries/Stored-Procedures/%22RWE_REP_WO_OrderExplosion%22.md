@@ -70,7 +70,6 @@ THEN
 	;
 END IF;
 
-
 IF :RepType = 'Released'
 THEN
 	SELECT R."Status" AS "Статус"
