@@ -2,5 +2,5 @@
 
 В этом разделе:
 
-- [Pre QRF](Pre-QRF.md)
-- [Queries](Queries.md)
+- [Pre QRF](Begin/Pre-QRF.md)
+- [Queries](Begin/Queries.md)
