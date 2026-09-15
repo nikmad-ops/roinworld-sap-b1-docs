@@ -1,4 +1,12 @@
-root: ./
-structure:
-  readme: README.md
-  summary: SUMMARY.md
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+
+site:
+  title: RoinWorld Docs
+  structure:
+    - type: space
+      key: sap-business-one
+      title: SAP Business One
+      path: sap-business-one
+      default: true
+      content:
+        directory: ./
