@@ -2,4 +2,4 @@
 
 В этом разделе:
 
-- [BP](BP.md)
+- [BP](Master-Data/BP.md)

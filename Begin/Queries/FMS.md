@@ -2,12 +2,12 @@
 
 В этом разделе:
 
-- [MarkDocR:GetRUUoMName](MarkDocR-GetRUUoMName.md)
-- [MarkDocR:GetLLUoMName](MarkDocR-GetLLUoMName.md)
-- [MarkDocR:GetRUItemName](MarkDocR-GetRUItemName.md)
-- [MarkDocR:GetLLItemName](MarkDocR-GetLLItemName.md)
-- [ITT:GetRussianName](ITT-GetRussianName.md)
-- [ITT:GetRUUoMName](ITT-GetRUUoMName.md)
-- [ITT:GetLocalUoMName](ITT-GetLocalUoMName.md)
-- [ITT:GetLocalName](ITT-GetLocalName.md)
-- [ORDR:GetFullDocNum](ORDR-GetFullDocNum.md)
+- [MarkDocR:GetRUUoMName](FMS/MarkDocR-GetRUUoMName.md)
+- [MarkDocR:GetLLUoMName](FMS/MarkDocR-GetLLUoMName.md)
+- [MarkDocR:GetRUItemName](FMS/MarkDocR-GetRUItemName.md)
+- [MarkDocR:GetLLItemName](FMS/MarkDocR-GetLLItemName.md)
+- [ITT:GetRussianName](FMS/ITT-GetRussianName.md)
+- [ITT:GetRUUoMName](FMS/ITT-GetRUUoMName.md)
+- [ITT:GetLocalUoMName](FMS/ITT-GetLocalUoMName.md)
+- [ITT:GetLocalName](FMS/ITT-GetLocalName.md)
+- [ORDR:GetFullDocNum](FMS/ORDR-GetFullDocNum.md)

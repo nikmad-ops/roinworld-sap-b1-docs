@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_1_AR_ServiceType.13.14.203.17"
+CREATE PROCEDURE "RWG_TN_1_AR_ServiceType.13.14.203.17."
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	

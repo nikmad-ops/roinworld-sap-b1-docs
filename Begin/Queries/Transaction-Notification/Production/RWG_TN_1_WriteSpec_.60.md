@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_1_WriteSpec_.60"
+CREATE PROCEDURE "RWG_TN_1_WriteSpec_.60."
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	

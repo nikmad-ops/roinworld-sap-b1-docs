@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_1_CheckBP_TaxID.2"
+CREATE PROCEDURE "RWG_TN_1_CheckBP_TaxID.2."
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -40,3 +40,4 @@ IF :DocEntry=-1 THEN RETURN; END IF;
 error := N'Поле Federal Tax ID является обязательным'; 
 	
 END;
+

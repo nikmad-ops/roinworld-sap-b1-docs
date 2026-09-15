@@ -2,9 +2,9 @@
 
 В этом разделе:
 
-- [Query Manager](Query-Manager.md)
-- [Dynamic Reports](Dynamic-Reports.md)
-- [Functions](Functions.md)
-- [Stored Procedures](Stored-Procedures.md)
-- [Transaction Notification](Transaction-Notification.md)
-- [FMS](FMS.md)
+- [Query Manager](Queries/Query-Manager.md)
+- [Dynamic Reports](Queries/Dynamic-Reports.md)
+- [Functions](Queries/Functions.md)
+- [Stored Procedures](Queries/Stored-Procedures.md)
+- [Transaction Notification](Queries/Transaction-Notification.md)
+- [FMS](Queries/FMS.md)

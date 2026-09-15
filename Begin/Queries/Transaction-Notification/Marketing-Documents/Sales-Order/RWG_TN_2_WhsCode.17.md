@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_2_WhsCode.17"
+CREATE PROCEDURE "RWG_TN_2_WhsCode.17."
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -46,3 +46,4 @@ error := N'Склад должен быть единым для всех стр�
 END IF;
 	
 END;
+

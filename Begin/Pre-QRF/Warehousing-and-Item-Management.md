@@ -2,8 +2,8 @@
 
 В этом разделе:
 
-- [Создание Спецификации](Создание-Спецификации.md)
+- [Создание Спецификации](Warehousing-and-Item-Management/Создание-Спецификации.md)
 
-- [Inventory Transfer](Inventory-Transfer.md)
+- [Inventory Transfer](Warehousing-and-Item-Management/Inventory-Transfer.md)
 
-- [Списание со склада](Списание-со-склада.md)
+- [Списание со склада](Warehousing-and-Item-Management/Списание-со-склада.md)

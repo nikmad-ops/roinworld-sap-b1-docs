@@ -1,4 +1,4 @@
-ALTER PROCEDURE "RWG_TN_2_WO_Warehouse.202"
+ALTER PROCEDURE "RWG_TN_2_WO_Warehouse.202."
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	

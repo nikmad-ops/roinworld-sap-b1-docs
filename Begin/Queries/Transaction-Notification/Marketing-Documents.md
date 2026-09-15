@@ -2,5 +2,5 @@
 
 В этом разделе:
 
-- [Sales Order](Sales-Order.md)
-- [Purchases](Purchases.md)
+- [Sales Order](Marketing-Documents/Sales-Order.md)
+- [Purchases](Marketing-Documents/Purchases.md)
