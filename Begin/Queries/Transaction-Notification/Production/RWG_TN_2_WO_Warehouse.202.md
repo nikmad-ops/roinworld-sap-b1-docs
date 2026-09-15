@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_2_PR_OwnerCode.1470000113."
+ALTER PROCEDURE "RWG_TN_2_WO_Warehouse.202"
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -24,16 +24,17 @@ BEGIN SEQUENTIAL EXECUTION
 
 DECLARE DocEntry INT;
 	
-IF :action NOT IN ('A','U') THEN RETURN; END IF;
+IF :action NOT IN ('U') THEN RETURN; END IF;
 		
-SELECT IFNULL(MAX(PR."DocEntry"),-1) INTO DocEntry
-FROM OPRQ PR
-WHERE PR."DocEntry" = :objKey
-AND IFNULL(PR."OwnerCode",-1) = -1;
-	
+SELECT IFNULL(MAX(W."DocEntry"),-1) INTO DocEntry
+FROM OWOR O
+INNER JOIN WOR1 W ON O."DocEntry" = W."DocEntry"
+WHERE O."DocEntry" = :objKey 
+AND O."Warehouse" <> W."wareHouse"
+;
 	
 IF :DocEntry=-1 THEN RETURN; END IF;
 	
-error := N'Подпись Ответственного является обязательной'; 
+error := N'Склад продукта не соответствует складу компонента'; 
 	
 END;

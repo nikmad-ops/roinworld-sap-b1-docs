@@ -10,4 +10,4 @@
 
 - [Goods Receipt PO](03.-Goods-Receipt-PO.md)
 
-- [Закупка | AP Invoice](04.-Закупка-%7C-AP-Invoice.md)
+- [Закупка | AP Invoice](04.-Закупка-AP-Invoice.md)

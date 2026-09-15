@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_1_AR_ServiceType.13.14.203.17."
+CREATE PROCEDURE "RWG_TN_1_AP_ServiceType.18.19.20.21"
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -30,10 +30,10 @@ IF :action NOT IN ('A','U') THEN RETURN; END IF;
 
 tabName :=
     CASE :objType
-    WHEN '13'        THEN 'INV'
-    WHEN '14'        THEN 'RIN'
-    WHEN '203'       THEN 'DPI'
-    WHEN '17'        THEN 'RDR'
+    WHEN '18'        THEN 'PCH'
+    WHEN '19'        THEN 'RPC'
+    WHEN '20'        THEN 'PDN'
+    WHEN '21'        THEN 'RPD'
     ELSE 'RETURN'
     END;
 IF :tabName ='RETURN' THEN RETURN;

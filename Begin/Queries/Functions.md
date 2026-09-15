@@ -2,4 +2,4 @@
 
 В этом разделе:
 
-- ["RWE_UOM_TO_BASEQTY"](%22RWE_UOM_TO_BASEQTY%22.md)
+- ["RWE_UOM_TO_BASEQTY"](RWE_UOM_TO_BASEQTY.md)

@@ -1,4 +1,4 @@
-ALTER PROCEDURE "RWG_TN_3_WO_CostCenter.202."
+CREATE PROCEDURE "RWG_TN_2_PR_CostCenter.1470000113"
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -24,18 +24,17 @@ BEGIN SEQUENTIAL EXECUTION
 
 DECLARE DocEntry INT;
 	
-IF :action NOT IN ('U') THEN RETURN; END IF;
+IF :action NOT IN ('A','U') THEN RETURN; END IF;
 		
-SELECT IFNULL(MAX(W."DocEntry"),-1) INTO DocEntry
-FROM OWOR O
-INNER JOIN WOR1 W ON O."DocEntry" = W."DocEntry"
-WHERE (O."DocEntry" = :objKey)
-AND ((W."OcrCode2" <> CASE WHEN W."wareHouse" = 'GN' THEN 'KT' ELSE W."wareHouse" END ) 
-OR (O."OcrCode2" <> CASE WHEN W."wareHouse" = 'GN' THEN 'KT' ELSE W."wareHouse" END))
+SELECT IFNULL(MAX(PR."DocEntry"),-1) INTO DocEntry
+FROM OPRQ PR
+INNER JOIN PRQ1 PR1 ON PR."DocEntry" = PR1."DocEntry"
+WHERE PR."DocEntry" = :objKey
+AND IFNULL(PR1."OcrCode",'N') = 'N' OR IFNULL(PR1."OcrCode2",'N') = 'N'
 ;
-	
+		
 IF :DocEntry=-1 THEN RETURN; END IF;
 	
-error := N'Department не соответствует складу компонента'; 
+error := N'Поля Key/Milestone и Department являются обязательными'; 
 	
 END;

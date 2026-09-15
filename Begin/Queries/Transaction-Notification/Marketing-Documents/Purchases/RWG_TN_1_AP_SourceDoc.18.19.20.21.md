@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_1_AP_ServiceType.18.19.20.21."
+ALTER PROCEDURE "RWG_TN_1_AP_SourceDoc.18.19.20.21"
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -10,14 +10,14 @@ SQL SECURITY INVOKER
 AS  	 
 
 /*
-* Procedure version: 20260907.SAY
+* Procedure version: 20260831.SAY
 * Report Name: TN
-* Creation Date: 07.09.2026
+* Creation Date: 31.08.2026
 * Creator: SAY (Alex Shtyrov)
 * Requested by: 
 * Category: DataValidation
 * Change log: 
-* 07.09.2026 - Initial version
+* 31.08.2026 - Initial version
 */
 
 BEGIN SEQUENTIAL EXECUTION 
@@ -41,15 +41,16 @@ END IF;
 
 sqlStmt := 'SELECT IFNULL(MAX(P1."DocEntry"), -1) ' ||
 		   'FROM  O' || :tabName || ' P ' ||
-           'WHERE P."DocEntry" = ? AND P1."DocType" =''S'' '
-           ;
+		   'INNER JOIN ' || :tabName || '1 P1  ' ||
+		   'ON P."DocEntry" = P1."DocEntry"  ' || 
+           'WHERE P."DocEntry" = ? AND P1."BaseType" IS NULL ';
  
 EXECUTE IMMEDIATE :sqlStmt INTO DocEntry USING :objKey;
  
-IF :DocEntry = -1 THEN RETURN;
+IF :DocEntry <> -1 THEN RETURN;
 END IF;
 
-error := N'Документы Сервисного типа запрещены, используйте S-Item"';
+error := N'Документ должен быть создан из базового документа с использованием "Скопировать из"';
 		
 
 END;

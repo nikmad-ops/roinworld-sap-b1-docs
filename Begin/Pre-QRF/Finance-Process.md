@@ -2,8 +2,8 @@
 
 В этом разделе:
 
-- [Выверка | Reconciliation](Выверка-%7C-Reconciliation.md)
+- [Выверка | Reconciliation](Выверка-Reconciliation.md)
 
-- [План счетов | Charts of Accounts](План-счетов-%7C-Charts-of-Accounts.md)
+- [План счетов | Charts of Accounts](План-счетов-Charts-of-Accounts.md)
 
-- [Бухгалтерская операция | Journal Entry](Бухгалтерская-операция-%7C-Journal-Entry.md)
+- [Бухгалтерская операция | Journal Entry](Бухгалтерская-операция-Journal-Entry.md)

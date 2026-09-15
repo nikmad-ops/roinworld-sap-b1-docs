@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_2_PR_CostCenter.1470000113."
+CREATE PROCEDURE "RWG_TN_2_PR_OwnerCode.1470000113"
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -28,13 +28,12 @@ IF :action NOT IN ('A','U') THEN RETURN; END IF;
 		
 SELECT IFNULL(MAX(PR."DocEntry"),-1) INTO DocEntry
 FROM OPRQ PR
-INNER JOIN PRQ1 PR1 ON PR."DocEntry" = PR1."DocEntry"
 WHERE PR."DocEntry" = :objKey
-AND IFNULL(PR1."OcrCode",'N') = 'N' OR IFNULL(PR1."OcrCode2",'N') = 'N'
-;
-		
+AND IFNULL(PR."OwnerCode",-1) = -1;
+	
+	
 IF :DocEntry=-1 THEN RETURN; END IF;
 	
-error := N'Поля Key/Milestone и Department являются обязательными'; 
+error := N'Подпись Ответственного является обязательной'; 
 	
 END;

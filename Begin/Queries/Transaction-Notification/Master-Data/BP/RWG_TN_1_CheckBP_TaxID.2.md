@@ -1,4 +1,4 @@
-CREATE PROCEDURE "RWG_TN_1_CheckBP_Series.2."
+CREATE PROCEDURE "RWG_TN_1_CheckBP_TaxID.2"
 (IN objType  NVARCHAR ( 30),				
 IN  objKey   NVARCHAR (255),				
 IN  action   NVARCHAR ( 1),	
@@ -29,13 +29,14 @@ IF :action NOT IN ('A','U') THEN RETURN; END IF;
 IF :objType='2' THEN
 	SELECT IFNULL(MAX(T0."DocEntry"),-1) INTO DocEntry
 	FROM OCRD T0 
-	INNER JOIN NNM1 T2 ON T0."ObjType" = T2."ObjectCode" AND T0."Series" = T2."Series"
 	WHERE T0."CardCode" = :objKey
-	AND T2."SeriesName" <> 'Manual';
+	AND IFNULL(T0."LicTradNum",'') = ''
+	;
+	
 END IF;
 	
 IF :DocEntry=-1 THEN RETURN; END IF;
 	
-error := N'Только Manual серия нумерацмм допустима'; 
+error := N'Поле Federal Tax ID является обязательным'; 
 	
 END;
