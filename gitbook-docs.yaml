@@ -1,5 +1,4 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
-
 site:
   title: RoinWorld Docs
   structure:
@@ -9,4 +8,4 @@ site:
       path: sap-business-one
       default: true
       content:
-        directory: ./
+        directory: null
