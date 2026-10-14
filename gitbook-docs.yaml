@@ -4,15 +4,15 @@ site:
   structure:
     - type: space
       key: sap-business-one
-      title: SAP Business One
-      path: sap-business-one
+      title: Русская версия документации SAP Business One
+      path: sap-business-one-v2-ru
       default: true
       content:
         directory: null
         language: ru
     - type: space
       key: space-1
-      title: Русская версия документации SAP Business One
+      title: English version SAP Business One
       path: sap-business-one-v2
       draft: true
       content:
