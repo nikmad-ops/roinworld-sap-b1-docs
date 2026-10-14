@@ -9,6 +9,7 @@ site:
       default: true
       content:
         directory: null
+        language: ru
     - type: space
       key: space-1
       title: Русская версия документации SAP Business One
