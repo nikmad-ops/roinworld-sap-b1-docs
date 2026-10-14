@@ -9,3 +9,10 @@ site:
       default: true
       content:
         directory: null
+    - type: space
+      key: space-1
+      title: Русская версия документации SAP Business One
+      path: sap-business-one-v2
+      draft: true
+      content:
+        directory: null
